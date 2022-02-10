@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="QuizQuestionsActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <TextView
+       android:id="@+id/tv_Question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textColor="@color/gray"
+        android:layout_margin="10dp"
+        tools:text="whit country dos this flag belong to?"/>
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_flag_of_brazil"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp">
+
+<ProgressBar
+    android:id="@+id/progressBar"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:layout_gravity="center"
+    android:max="9"
+    android:minWidth="50dp"
+    android:progress="0"
+    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+    android:indeterminate="false"/>
+        <TextView
+            android:id="@+id/tv_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:padding="15dp"
+            android:gravity="center"
+            android:text="2/9"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_option1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text=""
+        android:textSize="14sp"
+        android:textColor="@color/gray"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/styeloptions"/>
+
+    <TextView
+        android:id="@+id/tv_option2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text=""
+        android:textSize="14sp"
+        android:textColor="@color/gray"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/styeloptions"/>
+
+    <TextView
+        android:id="@+id/tv_option3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text=""
+        android:textSize="14sp"
+        android:textColor="@color/gray"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/styeloptions"/>
+
+    <TextView
+        android:id="@+id/tv_option4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text=""
+        android:textSize="14sp"
+        android:textColor="@color/gray"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/styeloptions"/>
+
+    <Button
+        android:id="@+id/btn_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
+</ScrollView>
+<!--ScrollView تخلي الصفحة متحركة على فوق او تحت-->
+<!--fillViewport تخلي السكرول فيو تاخذ الصفحة كاملة-->
+
+<!--ProgressBar-->
+<!--style="" تحدد شكل البروقرس بار-->
+<!--android:indeterminate="false" تلغي الانميشن-->
+<!--android:max="9" تحدد العدد الخاص بالبروقرس بار-->
+<!--android:progress="0-9" تحدد في اي عدد من البروقرس من عدد الماكس المسجل-->
